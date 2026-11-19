@@ -1,83 +1,504 @@
-<!-- NOTES SECTION -->
+<!DOCTYPE html>
+<html lang="hi">
 
-<section class="section">
+<head>
 
-<h2>📚 Study Notes</h2>
+<meta charset="UTF-8">
 
-<div class="cards">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<div class="card">
-<h3>Class 10 Maths Notes</h3>
-<a href="#">Download PDF</a>
+<title>Career Growth Classes</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:
+linear-gradient(
+-45deg,
+#0f172a,
+#1e1b4b,
+#6d28d9,
+#06b6d4,
+#ec4899
+);
+
+background-size:400% 400%;
+
+animation:bgMove 15s ease infinite;
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+@keyframes bgMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+header{
+
+background:
+rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border-bottom:
+1px solid rgba(255,255,255,.1);
+
+padding:20px;
+
+text-align:center;
+
+position:sticky;
+top:0;
+z-index:999;
+
+}
+
+.logo{
+
+font-size:40px;
+
+font-weight:800;
+
+background:
+linear-gradient(
+90deg,
+#00e5ff,
+#ff00ff,
+#ffe600
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+nav{
+
+background:
+rgba(0,0,0,.25);
+
+backdrop-filter:blur(20px);
+
+padding:15px;
+
+text-align:center;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin:10px;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+nav a:hover{
+
+color:#ffe600;
+
+}
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:75px;
+
+font-weight:800;
+
+background:
+linear-gradient(
+90deg,
+#00e5ff,
+#ff00ff,
+#ffe600
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+text-shadow:
+0 0 30px rgba(255,255,255,.3);
+
+}
+
+.hero p{
+
+font-size:24px;
+
+margin-top:10px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+margin:10px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+background:
+linear-gradient(
+135deg,
+#ff00ff,
+#00e5ff
+);
+
+color:white;
+
+box-shadow:
+0 0 20px rgba(0,229,255,.6);
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+transform:
+translateY(-5px)
+scale(1.05);
+
+box-shadow:
+0 0 40px #ff00ff,
+0 0 60px #00e5ff;
+
+}
+
+.section{
+
+padding:80px 20px;
+
+text-align:center;
+
+}
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.card{
+
+width:320px;
+
+padding:25px;
+
+border-radius:25px;
+
+background:
+rgba(255,255,255,.08);
+
+backdrop-filter:blur(25px);
+
+border:
+1px solid rgba(255,255,255,.15);
+
+box-shadow:
+0 8px 25px rgba(0,0,0,.3);
+
+transition:.5s;
+
+}
+
+.card:hover{
+
+transform:
+translateY(-10px);
+
+}
+
+.monday{
+background:linear-gradient(135deg,#3b82f6,#60a5fa);
+}
+
+.tuesday{
+background:linear-gradient(135deg,#10b981,#34d399);
+}
+
+.wednesday{
+background:linear-gradient(135deg,#f59e0b,#fbbf24);
+}
+
+.thursday{
+background:linear-gradient(135deg,#8b5cf6,#c084fc);
+}
+
+.friday{
+background:linear-gradient(135deg,#ef4444,#fb7185);
+}
+
+form{
+max-width:700px;
+margin:auto;
+}
+
+input,
+select,
+textarea{
+
+width:100%;
+
+padding:15px;
+
+margin:10px 0;
+
+border:none;
+
+border-radius:15px;
+
+background:
+rgba(255,255,255,.1);
+
+color:white;
+
+outline:none;
+
+}
+
+footer{
+
+background:
+rgba(0,0,0,.25);
+
+backdrop-filter:blur(20px);
+
+padding:40px;
+
+text-align:center;
+
+margin-top:50px;
+
+}
+
+.whatsapp{
+
+position:fixed;
+
+bottom:20px;
+right:20px;
+
+width:65px;
+height:65px;
+
+border-radius:50%;
+
+background:#25D366;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+font-size:30px;
+
+text-decoration:none;
+
+color:white;
+
+box-shadow:
+0 0 20px #25D366,
+0 0 50px #25D366;
+
+z-index:9999;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.card{
+width:95%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🎓 Career Growth Classes
 </div>
 
-<div class="card">
-<h3>Science Notes</h3>
-<a href="#">Download PDF</a>
-</div>
+<p>
+👨‍🏫 Director : Abhishek Sharma Sir
+</p>
 
-</div>
+</header>
 
-</section>
+<nav>
 
-<!-- RESULTS SECTION -->
+<a href="#about">About</a>
 
-<section class="section">
+<a href="#courses">Courses</a>
 
-<h2>🏆 Results</h2>
+<a href="#timetable">Timetable</a>
 
-<div class="cards">
+<a href="#gallery">Gallery</a>
 
-<div class="card">
-<h1>95%</h1>
-<p>Class 10 Top Score</p>
-</div>
+<a href="#admission">Admission</a>
 
-<div class="card">
-<h1>91%</h1>
-<p>Commerce Top Score</p>
-</div>
+<a href="#contact">Contact</a>
 
-</div>
+</nav>
 
-</section>
+<section class="hero">
 
-<!-- FAQ -->
+<h1>
+Career Growth Classes
+</h1>
 
-<section class="section">
+<p>
+MP Board Coaching Institute
+</p>
 
-<h2>❓ FAQ</h2>
+<p>
+Class 6th To 12th | Commerce | Live Classes
+</p>
 
-<div class="card">
-<h3>Registration Fee?</h3>
-<p>₹199 Only</p>
-</div>
+<br>
 
-<div class="card">
-<h3>Mode?</h3>
-<p>Online + Offline</p>
-</div>
+<a href="#admission"
+class="btn">
+
+🎯 Admission Open
+
+</a>
+
+<a href="https://wa.me/917581879202"
+class="btn">
+
+💬 WhatsApp
+
+</a>
 
 </section>
 <!-- ABOUT SECTION -->
 
 <section class="section" id="about">
 
-<h2>🎓 About Career Growth Classes</h2>
+<h2>🚀 About Career Growth Classes</h2>
 
 <p style="max-width:900px;margin:auto;">
-Career Growth Classes में MP Board के विद्यार्थियों को Class 6th से 12th तक
-सभी विषयों की गुणवत्तापूर्ण शिक्षा प्रदान की जाती है।
-यहाँ Concept Based Learning, Weekly Tests और Regular Guidance दी जाती है।
+Career Growth Classes में MP Board के विद्यार्थियों के लिए
+Class 6th से 12th तक सभी विषयों की बेहतरीन कोचिंग उपलब्ध है।
+हमारा उद्देश्य विद्यार्थियों को मजबूत बेस, शानदार रिजल्ट और उज्ज्वल भविष्य देना है।
 </p>
 
 </section>
 
-<!-- COURSES SECTION -->
+<!-- ACHIEVEMENTS -->
+
+<section class="section">
+
+<h2>🏆 Our Achievements</h2>
+
+<div class="cards">
+
+<div class="card">
+<h1>500+</h1>
+<p>Students</p>
+</div>
+
+<div class="card">
+<h1>95%</h1>
+<p>Success Rate</p>
+</div>
+
+<div class="card">
+<h1>7+</h1>
+<p>Courses</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- COURSES -->
 
 <section class="section" id="courses">
 
-<h2>📚 Available Courses</h2>
+<h2>📚 Our Courses</h2>
 
 <div class="cards">
 
@@ -108,20 +529,257 @@ Career Growth Classes में MP Board के विद्यार्थि�
 
 <div class="card">
 <h3>💼 Class 11th Commerce</h3>
-<p>Accountancy • Economics • Business Studies</p>
+<p>Accountancy, Economics, Business Studies</p>
 </div>
 
 <div class="card">
 <h3>💼 Class 12th Commerce</h3>
-<p>Accountancy • Economics
+<p>Accountancy, Economics, Business Studies</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FEES -->
+
+<section class="section">
+
+<h2>💰 Fee Structure</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Class 6th To 10th</h3>
+
+<p style="text-decoration:line-through;color:#ff5252;">
+₹4000
+</p>
+
+<h1 style="color:#00ff9d;">
+₹3600
+</h1>
+
+<p>
+🔥 Special Offer Price
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Class 11th & 12th Commerce</h3>
+
+<h1 style="color:#00e5ff;">
+₹5000
+</h1>
+
+<p>
+Commerce Professional Batch
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TOPPERS -->
+
+<section class="section">
+
+<h2>🥇 Top Performers</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h1>95%</h1>
+
+<p>
+Class 10th Board Result
+</p>
+
+</div>
+
+<div class="card">
+
+<h1>91%</h1>
+
+<p>
+Class 12th Commerce
+</p>
+
+</div>
+
+<div class="card">
+
+<h1>93%</h1>
+
+<p>
+Merit Student
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="section" id="gallery">
+
+<h2>📸 Our Gallery</h2>
+
+<div class="cards gallery">
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900"
+width="100%">
+
+</div>
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=900"
+width="100%">
+
+</div>
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900"
+width="100%">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TIMETABLE -->
+
+<section class="section" id="timetable">
+
+<h2>📅 Weekly Timetable</h2>
+
+<div class="cards">
+
+<div class="card monday">
+
+<h3>🔵 Class 6th</h3>
+
+<p>📘 Monday - Maths</p>
+
+<p>🕕 6:00 AM - 7:00 AM</p>
+
+<a href="#" class="btn">
+🔴 Join Live Class
+</a>
+
+</div>
+
+<div class="card tuesday">
+
+<h3>🟢 Class 7th</h3>
+
+<p>🧪 Tuesday - Science</p>
+
+<p>🕖 7:00 AM - 8:00 AM</p>
+
+<a href="#" class="btn">
+🔴 Join Live Class
+</a>
+
+</div>
+
+<div class="card wednesday">
+
+<h3>🟠 Class 8th</h3>
+
+<p>📖 Wednesday - English</p>
+
+<p>🕗 8:00 AM - 9:00 AM</p>
+
+<a href="#" class="btn">
+🔴 Join Live Class
+</a>
+
+</div>
+
+<div class="card thursday">
+
+<h3>🟣 Class 9th</h3>
+
+<p>🌍 Thursday - Social Science</p>
+
+<p>🕘 9:00 AM - 10:00 AM</p>
+
+<a href="#" class="btn">
+🔴 Join Live Class
+</a>
+
+</div>
+
+<div class="card friday">
+
+<h3>🔴 Class 10th</h3>
+
+<p>📘 Friday - Maths Revision</p>
+
+<p>🕕 6:00 AM - 7:00 AM</p>
+
+<a href="#" class="btn">
+🔴 Join Live Class
+</a>
+
+</div>
+
+<div class="card monday">
+
+<h3>💼 Class 11th Commerce</h3>
+
+<p>📊 Accountancy</p>
+
+<p>🕒 3:00 PM - 4:00 PM</p>
+
+<a href="#" class="btn">
+🔴 Join Live Class
+</a>
+
+</div>
+
+<div class="card tuesday">
+
+<h3>💼 Class 12th Commerce</h3>
+
+<p>💹 Economics</p>
+
+<p>🕔 5:00 PM - 6:00 PM</p>
+
+<a href="#" class="btn">
+🔴 Join Live Class
+</a>
+
+</div>
+
+</div>
+
+</section>
 <!-- ADMISSION SECTION -->
 
 <section class="section" id="admission">
 
-<h2>🎓 Online Admission Form</h2>
+<h2>🎓 Online Admission Registration</h2>
 
 <p>
-Admission लेने के लिए नीचे Form भरें।
+अपनी जानकारी भरें और Registration पूरा करें।
 </p>
 
 <form>
@@ -129,26 +787,32 @@ Admission लेने के लिए नीचे Form भरें।
 <input
 id="studentName"
 type="text"
-placeholder="Student Name"
+placeholder="👤 Student Name"
 required>
 
 <input
 id="mobile"
 type="tel"
-placeholder="Mobile Number"
+placeholder="📱 Mobile Number"
+required>
+
+<input
+id="email"
+type="email"
+placeholder="📧 Email Address"
 required>
 
 <input
 type="text"
-placeholder="School Name">
+placeholder="🏫 School Name">
 
 <select
 id="course"
-onchange="showPayment()"
-required>
+required
+onchange="showPayment()">
 
 <option value="">
-Select Class
+📚 Select Class
 </option>
 
 <option>Class 6th</option>
@@ -161,28 +825,42 @@ Select Class
 
 </select>
 
+<input
+id="coupon"
+type="text"
+placeholder="🎁 Coupon Code (CGC10)">
+
+<button
+type="button"
+class="btn"
+onclick="applyCoupon()">
+
+Apply Coupon
+
+</button>
+
+<p id="couponMsg"></p>
+
 <textarea
 rows="4"
-placeholder="Address">
+placeholder="📍 Address">
 </textarea>
 
-<div
-id="paymentBox"
-style="display:none;
-margin-top:20px;">
+<!-- REGISTRATION PAYMENT -->
 
-<hr>
+<div id="paymentBox"
+style="display:none;">
 
-<h2>
-💳 Registration Fee
-</h2>
+<br>
 
-<h1 style="color:green;">
+<h2>💳 Registration Fee</h2>
+
+<h1 style="color:#00ff9d;">
 ₹199
 </h1>
 
 <p>
-Registration Confirm करने के लिए Payment करें
+Registration Confirm करने के लिए ₹199 जमा करें।
 </p>
 
 <img
@@ -190,17 +868,17 @@ src="qr.jpg"
 width="250"
 alt="Payment QR"
 style="
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.2);
+border-radius:20px;
+box-shadow:0 0 25px rgba(255,255,255,.3);
 ">
 
 <br><br>
 
 <a
-class="btn"
-href="upi://pay?pa=tribalcheif@ptyes&pn=Abhishek%20Sharma&am=199&cu=INR">
+href="upi://pay?pa=tribalcheif@ptyes&pn=Abhishek%20Sharma&am=199&cu=INR"
+class="btn">
 
-📱 Pay ₹199
+💳 Pay ₹199 Registration Fee
 
 </a>
 
@@ -213,11 +891,62 @@ UPI ID :
 
 <br>
 
-<a
+<button
+type="button"
 class="btn"
-href="https://wa.me/917581879202?text=Hello%20Sir,%20I%20have%20paid%20the%20registration%20fee">
+onclick="showBalance()">
 
-📲 Send Screenshot
+✅ I Have Paid ₹199
+
+</button>
+
+</div>
+
+<!-- REMAINING PAYMENT -->
+
+<div id="balanceBox"
+style="display:none;">
+
+<hr><br>
+
+<h2>
+✅ Registration Completed
+</h2>
+
+<div class="card">
+
+<h3 id="selectedCourse"></h3>
+
+<p>
+📅 Course Validity : <b>12 Months</b>
+</p>
+
+<p id="originalFee"></p>
+
+<p id="discountFee"></p>
+
+<h2 id="courseFee"></h2>
+
+</div>
+
+<br>
+
+<a
+id="remainingBtn"
+href="#"
+class="btn">
+
+💰 Pay Remaining Fee
+
+</a>
+
+<br><br>
+
+<a
+href="https://wa.me/917581879202?text=Hello%20Sir,%20I%20have%20completed%20my%20fee%20payment"
+class="btn">
+
+📲 Send Payment Screenshot
 
 </a>
 
@@ -227,89 +956,26 @@ href="https://wa.me/917581879202?text=Hello%20Sir,%20I%20have%20paid%20the%20reg
 
 </section>
 
-<!-- STUDENT REVIEWS -->
+<!-- CONTACT SECTION -->
 
-<section class="section">
+<section class="section"
+id="contact">
 
-<h2>⭐ Student Reviews</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>⭐⭐⭐⭐⭐</h3>
-<p>
-Best Coaching Institute For MP Board Students.
-</p>
-</div>
+<h2>📞 Contact Us</h2>
 
 <div class="card">
-<h3>⭐⭐⭐⭐⭐</h3>
-<p>
-Regular Tests And Friendly Teaching Environment.
-</p>
-</div>
-
-<div class="card">
-<h3>⭐⭐⭐⭐⭐</h3>
-<p>
-Affordable Fees And Better Results.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- WHY CHOOSE US -->
-
-<section class="section">
-
-<h2>🎯 Why Choose Us?</h2>
-
-<div class="cards">
-
-<div class="card">✅ Experienced Faculty</div>
-
-<div class="card">✅ Weekly Tests</div>
-
-<div class="card">✅ Live Classes</div>
-
-<div class="card">✅ Notes & Assignments</div>
-
-<div class="card">✅ Commerce Special Batch</div>
-
-<div class="card">✅ Board Exam Preparation</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="section" id="contact">
-
-<h2>☎ Contact Us</h2>
 
 <h3>Career Growth Classes</h3>
 
-<p>
-👨‍🏫 Director:
-Abhishek Sharma Sir
-</p>
+<p>👨‍🏫 Director : Abhishek Sharma Sir</p>
 
-<p>
-📞 Mobile:
-7581879202
-</p>
+<p>📱 7581879202</p>
 
-<p>
-💬 WhatsApp:
-7581879202
-</p>
+<p>📧 careergrowthclasses@gmail.com</p>
 
-<p>
-📚 MP Board Coaching Classes
-</p>
+<p>📚 MP Board Coaching Institute</p>
+
+</div>
 
 </section>
 
@@ -321,26 +987,17 @@ Abhishek Sharma Sir
 🎓 Career Growth Classes
 </h2>
 
-<p>
-आज की पढ़ाई, कल की सफलता
-</p>
+<p>आज की पढ़ाई, कल की सफलता</p>
 
-<p>
-Director:
-Abhishek Sharma Sir
-</p>
+<p>👨‍🏫 Abhishek Sharma Sir</p>
 
-<p>
-📞 7581879202
-</p>
+<p>📞 7581879202</p>
 
-<p>
-© 2026 Career Growth Classes
-</p>
+<p>© 2026 Career Growth Classes</p>
 
 </footer>
 
-<!-- FLOATING WHATSAPP BUTTON -->
+<!-- FLOATING WHATSAPP -->
 
 <a
 href="https://wa.me/917581879202"
@@ -355,22 +1012,119 @@ target="_blank">
 
 <script>
 
+let discountedAmount = 0;
+
 function showPayment(){
 
 let course =
 document.getElementById("course").value;
 
-if(course !== ""){
+if(course!=""){
+document.getElementById("paymentBox").style.display="block";
+}
 
-document.getElementById("paymentBox")
-.style.display = "block";
+}
+
+function applyCoupon(){
+
+let course =
+document.getElementById("course").value;
+
+let total = 0;
+
+if(
+course=="Class 6th" ||
+course=="Class 7th" ||
+course=="Class 8th" ||
+course=="Class 9th" ||
+course=="Class 10th"
+){
+total = 5000;
+}
+
+if(
+course=="Class 11th Commerce" ||
+course=="Class 12th Commerce"
+){
+total = 6000;
+}
+
+let coupon =
+document.getElementById("coupon").value;
+
+if(coupon=="CGC10"){
+
+discountedAmount =
+total - (total*10/100);
+
+document.getElementById("couponMsg")
+.innerHTML =
+"✅ Coupon Applied Successfully (10% OFF)";
 
 }else{
 
-document.getElementById("paymentBox")
-.style.display = "none";
+discountedAmount = total;
+
+document.getElementById("couponMsg")
+.innerHTML =
+"❌ Coupon Not Applied";
 
 }
+
+}
+
+function showBalance(){
+
+let course =
+document.getElementById("course").value;
+
+let total = 0;
+
+if(
+course=="Class 6th" ||
+course=="Class 7th" ||
+course=="Class 8th" ||
+course=="Class 9th" ||
+course=="Class 10th"
+){
+total = 5000;
+}
+
+if(
+course=="Class 11th Commerce" ||
+course=="Class 12th Commerce"
+){
+total = 6000;
+}
+
+if(discountedAmount==0){
+discountedAmount = total;
+}
+
+let remaining = discountedAmount - 199;
+
+document.getElementById("balanceBox")
+.style.display="block";
+
+document.getElementById("selectedCourse")
+.innerHTML =
+"📚 "+course;
+
+document.getElementById("originalFee")
+.innerHTML =
+"Original Fee : ₹"+total;
+
+document.getElementById("discountFee")
+.innerHTML =
+"Fee After Discount : ₹"+discountedAmount;
+
+document.getElementById("courseFee")
+.innerHTML =
+"Remaining Payable Fee : ₹"+remaining;
+
+document.getElementById("remainingBtn")
+.href=
+"upi://pay?pa=tribalcheif@ptyes&pn=Abhishek%20Sharma&am="+remaining+"&cu=INR";
 
 }
 
